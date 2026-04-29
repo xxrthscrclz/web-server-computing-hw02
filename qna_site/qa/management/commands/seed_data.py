@@ -13,7 +13,6 @@ class Command(BaseCommand):
     help = 'Create test users, questions, and answers'
 
     def handle(self, *args, **kwargs):
-        # TODO: 사용자 5명 생성 (user1~user5, 비밀번호: test1234)
         for i in range(5):
             username = f'user{i+1}'
             if not User.objects.filter(username=username).exists():

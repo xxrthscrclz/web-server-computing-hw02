@@ -20,7 +20,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # TODO: 여기에 'qa' 앱을 추가하세요
     'qa',
 ]
 
@@ -40,7 +39,6 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
-        # TODO: APP_DIRS를 True로 설정해야 앱 내부 templates 폴더를 자동 인식합니다
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,7 +76,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# TODO: 로그인/로그아웃 후 이동할 URL을 '/'로 설정하세요
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
